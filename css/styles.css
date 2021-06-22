@@ -1,0 +1,122 @@
+body {
+  background-image: url("/background.jpeg");
+}
+
+#outer-circle {
+  margin: 50px auto;
+  position: relative;
+  border: 3px solid rgb(46, 45, 45);
+
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+#top-left {
+  background: green;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 0;
+  left: 0;
+}
+#top-right {
+  background: red;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  top: 0;
+  right: 0;
+}
+#bottom-left {
+  background: yellow;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: 0;
+  left: 0;
+}
+#bottom-right {
+  background: blue;
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  bottom: 0;
+  right: 0;
+}
+#title {
+  position: absolute;
+  color: wheat;
+  height: 100px;
+  width: 150px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+#title h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+#switches {
+  border: 3px solid black;
+  position: absolute;
+  background: grey;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#switches #start {
+  background: rgb(221, 17, 17);
+  text-align: center;
+  color: white;
+  border: 2px solid black;
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+}
+#switches #start:hover {
+  background: rgb(238, 108, 108);
+}
+.text1 {
+  font-size: 1.25rem;
+  color: black;
+  position: absolute;
+  width: 245px;
+  top: 50%;
+  left: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.power-text {
+  margin-top: 10px;
+  height: 20px;
+}
+.strict-text {
+  margin-top: 10px;
+  height: 20px;
+}
+#turn {
+  background: rgba(87, 31, 31, 0.842);
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: rgb(255, 0, 0);
+}
